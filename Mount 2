@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mount Caramel Book</title>
+    <head>
+        <body>
+            <!--Heading--> 
+            <h1>Mount Caramel Book Club</h1>
+            
+            <!--Navigation-->
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="https://dyslexiafoundation.org/books-children-books/" target="_blank">Online Resources</a></li>
+                <li><a href="#">Reading Groups</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+
+            
+            <!-- content-1 -->
+            <h2>Meet our teachers</h2>
+            <h3>Ms. Emma</h3>
+            <p>She teaches elementary school kids. She has a bachelor's degree in Elementary education</p>
+            <h3>Ms. Caroline</h3>
+            <p>She teacher secondary school and high school kids. She has a Master's of Arts..</p>
+            
+          
+
+                <!-- Contact Info -->
+                <h2>Contact Us Mrs. Caroline</h2>
+                <p>Phone No: +1124533</p>
+                <address>36th Main, Palm Street, Delhi-36035</address>
+                </body>
+                
+                </html>
+
+
+
+                <table border="5">
+                    <tr>
+                        <th>Company</th>
+                        <th>Contact</th>
+                        <th>Country</th>
+                    </tr>
+                    <tr>
+                      <td>Alfrends Futterkiste</td>
+                      <td>maria Anders</td>
+                      <td>Gemany</td>
+                    </tr>
+                      <td>Centero Comercial moctezuma</td>
+                      <td>Francisco Chang</td>
+                       <td>Mexico</td>
+
+        
+
+      
