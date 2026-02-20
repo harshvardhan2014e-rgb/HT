@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" 
+    <title>HoneyBees Blog</title> 
+</head> 
+<body>
+    <header>
+        <h1>Welcome To Harsh's HoneyBees Blog</h1>
+        <p>Exploring The World Of Honey HoneyBees</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About HoneyBees</a></li>
+            <li><a href="#importance">Why They Matter</a></li>
+            <li><a href="#funfacts">Funfacts</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="=About"
+        <h2></h2><h2> HoneyBees</h2>
+        <p>HoneyBees Are Fascinating insects That play a vital role in our life</p>
+    </section>
+
+    <section>
+        <h2>Importance of HoneyBees</h2>
+        <p>They help plants reproduce and provide us with Honey</p>
+    </section>
+
+    <section id="Funfacts"
+    <h2></h2><h2>Fun Facts</h2>
+    <ul>
+        <li>Bees communicate through dances.</li>
+        <li>A single bee produces about 1/12 teaspoon of honey in its life time .</li>
+    </ul>
+</section>
+    </main>
+
+    <footer><p>&copy; Harsh's Honeybees Blog</p></footer>
+</body>
+</html>
