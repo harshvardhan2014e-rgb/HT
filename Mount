@@ -9,7 +9,7 @@
         <h1>Mount Caramel Book Club</h1>
 
         <!--Intro-->
-        <h2>W<!DOCTYPE html>
+        <h2><!DOCTYPE html>
         <html>
         
         <head>
@@ -38,16 +38,53 @@
             <strong>Amit: </strong><q>I loved reading this book. A must read for everyone.</q>
             <p><strong>Sekhar: </strong><q>I really enjoyed reading this book</q></p>
         
-            <!-- Bestseller Section -->
-            <h2>Best Sellers</h2>
-            <em>The Woman in the Window:</em> by <em>A.J.Finn</em><br>
-            <em>Stand By Me:</em> by <em>S.D.Robertson</em><br>
-            <b>One in a Million:</b> by <em>Lindsey Kelk</em><br>
-        
+            <h2>Related Videos</h2>
+            <video width="480" height="360" controls autoplay>
+                <source src="https://drive.google.com/file/d/1ayLFDrG4l6kMgV6XQeGEOEWQfcURxfWr/view" type="video/mp4"
+                Your Brower Does not support the video tag.
+            </video>
+        <br><br>
+        <iframe width="480" height="360" src="https://www.youtube.com/watch?v=wcWLKRXgjsw"
+        <h2>opening timings</h2>
+        <table>
+            <tr>
+                <th>MONDAY</th>
+                <td>11AM - 3PM</td>
+            </tr>    
+            <tr>
+                <th>TUESDAY</th>
+                <td>11AM - 3PM</td>
+            </tr>
+            <tr>
+                <th>WEDNESDAY</th>
+                <td>11AM - 3PM</td>
+            </tr>
+            <tr>
+                <th>THRUSDAY</th>
+                <td>11AM - 3PM</td>
+            </tr>
+            <tr>
+                <th>FRIDAY</th>
+                <td>11AM - 3PM</td>
+            </tr>
+            <tr>
+                <th>SATURDAY</th>
+                <td>11AM - 1PM</td>
+            </tr>
+            <tr>
+                <th>SUNDAY</th>
+                <td>CLOSED</td>
+            </tr>
+            <H2>BESTSELLER SECTION</H2>
+            <LI><em>CHARLIE AND THE CHOCHOLATE FACTORY</em>
+                <LI><em>THE CAT IN THE HAT</em>
+                    <LI><em>THE LITLE PRINCE</em>
+                        <LI><em>WHERE THE WILD THINGS ARE</em>
+                        
             <!-- Contact Info -->
             <h2>Contact Us Mrs. Caroline</h2>
             <p>Phone No: +1124533</p>
             <address>36th Main, Palm Street, Delhi-36035</address>
-        </body>
-        
-        </html>
+            </body>
+            
+            </html>
