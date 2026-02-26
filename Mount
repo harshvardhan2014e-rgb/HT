@@ -37,7 +37,7 @@
             <h3>Alice in the wonderland</h3>
             <strong>Amit: </strong><q>I loved reading this book. A must read for everyone.</q>
             <p><strong>Sekhar: </strong><q>I really enjoyed reading this book</q></p>
-        
+        <div>
             <h2>Related Videos</h2>
             <video width="480" height="360" controls autoplay>
                 <source src="https://drive.google.com/file/d/1ayLFDrG4l6kMgV6XQeGEOEWQfcURxfWr/view" type="video/mp4"
@@ -45,6 +45,8 @@
             </video>
         <br><br>
         <iframe width="480" height="360" src="https://www.youtube.com/watch?v=wcWLKRXgjsw"
+        </div>
+        <div>
         <h2>opening timings</h2>
         <table>
             <tr>
@@ -88,3 +90,4 @@
             </body>
             
             </html>
+        </div>
