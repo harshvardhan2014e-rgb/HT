@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<h1>Indian Food</h1>
+<p>Indian cuisine is a vibrant tapestry of flavors and traditions, with each region offering its own unique dishes. From
+the spicy curries of the South to the rich Mughlai dishes of the North, Indian food is a celebration of diversity and
+cultural heritage.</p>
+        <header>
+            <h1>Navigational Links<h1>
+                    <nav>
+                        <ul>
+                            <li><a href="#Bengali Food">Bengali Food</a></li>
+                            <li><a href="#Gujarati Food">Gujarati Food</a></li>
+                            <li><a href="#Mughalai Food>Munghalai food</a></li>
+                            <li><a href="#Pujabi Food">Punjabi Food</a></li>
+                            <li><a href="#South Indian Food">South Indian Food</a></li>
+                        </ul>
+                    </nav>
+        </header>
+
+        <b>Bengali Food</b>
+        <figure>
+            <img src="https://www.awesomecuisine.com/wp-content/uploads/2024/02/Bengali-Cuisine.jpg" width="300" height="250">
+            <figcaption>Bengali cuisine is renowned for its rich flavors, emphasis on rice and fish, and a wide variety of sweets and savory
+            dishes.
+            Bengali food originates from the Bengal region, encompassing West Bengal in India and Bangladesh, and is shaped by its
+            fertile river deltas, abundant freshwater and seawater fish, and diverse cultural influences including Mughal, Persian,
+            and British cuisines.</figcaption>
+        </figure>
+        
+        <b>Gujarati Food</b>
+        <figure>
+            <img src="https://images.squarespace-cdn.com/content/v1/5c6df920d74562c46b234f9e/1587328696559-W520QMT84BQ7F0GIVO91/thaalsite.jpg" width="300" height="250">
+            <figcaption>Gujarati cuisine is the cuisine of the Indian state of Gujarat. The typical Gujarati thali consists of rotli, dal or
+            curry, rice, and shaak (a dish made up of several different combinations of vegetables and spices, which may be either
+            spicy or sweet).</figcaption>
+        </figure>
+
+        <b>Mughlai Food</b>
+        <figure>
+            <img src="https://static.toiimg.com/thumb/msid-82428481,width-748,height-499,resizemode=4,imgsize-1061969/Most-loved-Mughlai-dishes-one-must-try-in-India.jpg"
+                width="300" height="250">
+            <figcaption>Mughali foods are a testament to the Mughal Empire's culinary legacy, blending Persian elegance with Indian spices. The
+            Mughals introduced a variety of dishes that have since become iconic in Indian cuisine.</figcaption>
+        </figure>
+
+        <b>Punjabi Food</b>
+        <figure>
+            <img src="https://www.nehascookbook.com/wp-content/uploads/2022/09/Punjabi-thali-WS.jpg"
+                width="350" height="250">
+            <figcaption>Punjabi food originates from the Punjab region of South Asia, now divided between India and Pakistan. It is heavily
+            influenced by the agrarian lifestyle, with staples including wheat, rice, and dairy products. Punjabi cuisine is famous
+            for its use of ghee, butter, cream, and aromatic spices, creating bold, comforting flavors. Traditional cooking often
+            involves tandoors (clay ovens), which impart a smoky flavor to breads, meats, and vegetables.</figcaption>
+        </figure>
+
+        <b>South Indian Foods</b>
+        <figure>
+            <img src="https://sukhis.com/app/uploads/2022/04/image3-4.jpg" width="350" height="250">
+            <figcaption>South Indian cuisine is a vibrant and diverse culinary tradition that encompasses the food of the five southern states
+            of India: Tamil Nadu, Andhra Pradesh, Karnataka, Kerala, and Telangana.Andhra Pradesh cuisine is hotly-spiced and often vegetarian, with seafood prominent along the coast; Kerala too has a
+            range of seafood dishes from its coastline. The cuisine of Tamil Nadu is similarly mainly vegetarian, but even
+            hotter.In Telangana, Hyderabadi cuisine is somewhat milder but subtle and full of flavour, making use of saffron,
+            nuts, and dried fruits as well as warmer spices in dishes for the Nizams.
+</figcaption>
+        </figure>
+</html>
