@@ -1,0 +1,30 @@
+<html>
+<head>
+<style>
+div {
+    background-color: green
+    padding: 10px;
+}
+div.first { 
+    opacity: 0.1;
+}
+div.second {
+    opacity: 0.3;
+}
+div.thrid {
+    opacity: 0.6;
+}
+</style>
+</head>
+<body>
+
+<h1> The Opacity property</h1>
+
+<p>This Is How This Property</p>
+
+<div class='first'><p>opactiy 0.1</p></div>
+<div class='second'><p>opactiy 0.3</p></div>
+<div class='fthird'><p>opactiy 0.6</p></div>
+<div class='default'><p>opactiy 1</p></div>
+
+</body>

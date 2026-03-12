@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+    right: 30px; 
+    border: 3px seagreen; 
+}
+<div.absolute {
+    position: absolute;
+    left: 50px; 
+    border: 3px blue;
+}
+div.relative {
+    position: relative;
+    left: 100px;
+    border: 3px red;  
+}
+div.fixed {
+    position: fixed;
+    top: 0;
+    right: 20px;
+    width: 300px;
+    border: black;
+}

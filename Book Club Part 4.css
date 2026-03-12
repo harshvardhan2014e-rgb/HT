@@ -1,0 +1,85 @@
+body {
+    /* first lesson*/
+    background-color: white;
+}
+header {
+    /* first lesson*/
+    background-color: brown;
+}
+nav {
+    /* first lesson*/
+    background-color: aquamarine;
+    /*fourth lesson*/
+    position: sticky;
+    top: 0%;
+    z-index: 2;
+}
+#intro {
+    /* first lesson*/
+    background-color: lightpink;
+    /*second lesson*/
+    font-family: Arial, Helvetica, sans-serif;
+    /*third lesson*/
+    text-align: center;
+}
+
+.main-section-content h2 {
+    /* first lesson*/
+    background-color: darkkhaki;
+    /*second lesson*/
+    font-family: Arial, Helvetica, sans-serif;
+    /*third lesson*/
+    padding: 5px;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+#bestsellers,
+footer {
+    /* first lesson*/
+    background-color: lightyellow;
+}
+
+header
+nav
+#intro
+#main-section
+#bestsellers
+footer {
+    /* first lesson*/
+    border: 1px black;
+}
+header
+nav
+#mainsection {
+    /* first lesson*/
+    color: white;
+    /*second lesson*/
+    font-family: Arial, Helvetica, sans-serif;
+    /* thrid lesson*/
+    margin: 30px;
+}
+h2
+p {
+    /* first lesson*/
+    color: red;
+}
+table
+th
+td {
+    /*first lesson*/
+    border: 1px black;
+}
+tr:last-child {
+    /* first lesson*/
+    color: red;
+}
+.teacher-info {
+    /* first lesson*/
+    border-radius: 5px;
+    /* thrid lesson*/
+    margin: 10px;
+    width: 400px;
+    box-shadow: 6px 0px 21px -3px white;

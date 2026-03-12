@@ -221,7 +221,6 @@
         </footer>
         <!--fifth lesson-->
         <button>Enquiry</button>
-    </div>
-</body>
-
-</html>
+  
+        body {
+            
