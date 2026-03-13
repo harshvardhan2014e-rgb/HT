@@ -61,6 +61,15 @@ nav
     /* thrid lesson*/
     margin: 30px;
 }
+h1 {
+    /* first lesson*/
+    color: white;
+    /*second lesson*/
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* Third lesson*/
+    margin: 30px;
+}
 h2
 p {
     /* first lesson*/
@@ -76,6 +85,14 @@ tr:last-child {
     /* first lesson*/
     color: red;
 }
+span {
+    /* first lesson*/
+    color: blue;
+}
+footer p:first-child span {
+    /* first lesson*/
+    color: red;
+}
 .teacher-info {
     /* first lesson*/
     border-radius: 5px;
@@ -83,3 +100,88 @@ tr:last-child {
     margin: 10px;
     width: 400px;
     box-shadow: 6px 0px 21px -3px white;
+}
+
+button {
+    /*first lesson*/
+    background-color: red;
+    color: white;
+    /*second lesson*/
+    font-size: 20px;
+    font-weight: bold;
+    /* thrid lesson*/
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+
+    /*fourth lesson*/
+    position: fixed;
+    right: 50px;
+    bottom: 40px;
+}
+
+/*second lesson*/
+ul {
+    list-style-type: none;
+}
+li a {
+    text-decoration: none;
+    color: beige;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+li a:hover {
+    color: red;
+}
+
+p {
+    font-size: 18px;
+}
+
+h3 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+
+/* thrid lesson*/
+nav li {
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.teacher-info div:last-child {
+    margin-left: 50px;
+}
+
+.main-section-content {
+    padding: 20px;
+}
+
+table {
+    margin: auto;
+}
+
+th
+td {
+    padding: 10px;
+}
+
+footer {
+    padding: 20px;
+}
+
+ol li {
+    margin-bottom: 20px;
+}
+
+/* fourth lesson*/
+#book-reviews p
+#book-reviews h3 {
+    position: relative;
+    left: 40%;
+    width: 400px;
+}
