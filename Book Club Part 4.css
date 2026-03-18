@@ -1,5 +1,6 @@
 body {
     /* first lesson*/
+    
     background-color: white;
 }
 header {
@@ -21,7 +22,7 @@ nav {
     font-family: Arial, Helvetica, sans-serif;
     /*third lesson*/
     text-align: center;
-}
+}z
 
 .main-section-content h2 {
     /* first lesson*/
@@ -184,4 +185,21 @@ ol li {
     position: relative;
     left: 40%;
     width: 400px;
+}
+
+/*fifth lesson*/
+
+#videos div{
+    display: flex;
+    justify-content: space-around;
+}
+
+#teachers {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
 }
