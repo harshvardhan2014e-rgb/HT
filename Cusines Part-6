@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Indian Cuisines</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            background-color: #fafafa;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        p.intro {
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+            font-size: 1.1em;
+        }
+
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #b03a2e;
+        }
+
+        section {
+            margin: 40px 0;
+        }
+
+        section h2 {
+            padding: 10px;
+            color: white;
+            border-radius: 5px;
+        }
+
+        section figure {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        section figcaption {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        /* 🎨 Color-coded headers */
+        .bengali h2 {
+            background-color: #e67e22;
+        }
+
+        .gujarati h2 {
+            background-color: #27ae60;
+        }
+
+        .mughlai h2 {
+            background-color: #8e44ad;
+        }
+
+        .punjabi h2 {
+            background-color: #d4ac0d;
+        }
+
+        .southindian h2 {
+            background-color: #2980b9;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
+    <!DOCTYPE html>
+    <html>
+    
+    <head>
+        <title>Text on Image</title>
+        <style>
+            .image-container {
+                position: relative;
+                display: inline-block;
+                width: 600px;
+                /*image size */
+            }
+    
+            .image-container img {
+                width: 100%;
+                height: auto;
+                border-radius: 8px;
+            }
+    
+            .image-text {
+                position: absolute;
+                bottom: 0;
+                /* stick to bottom */
+                left: 0;
+                width: 100%;
+                /* span full width */
+                background: rgba(0, 0, 0, 0.6);
+                /* dark overlay bar */
+                color: white;
+                font-size: 1.2em;
+                padding: 10px;
+                text-align: center;
+                border-radius: 0 0 8px 8px;
+                /* match rounded corners */
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="image-container">
+            <img src="spice.jpg" alt="Indian Spices">
+            <div class="image-text">The traditional food of India has been widely appreciated for its fabulous use of herbs and
+            spices. Indian cuisine is known for its large assortment dishes. The cooking style varies from region to
+            region and is largely divided into South Indian & North Indian cuisine. India is quite famous for its
+            diverse multi cuisine available in a large number of restaurants and hotel resorts, which is reminiscent of
+            unity in diversity.</div>
+        </div>
+    </body>
+    
+    </html>
+<aside>
+    <h2>Popular Foods</h2>
+    <div>
+        <h3>North indian</h3>
+        <ul>
+            <li>Chole Bhature</li>
+            <li>Samosa</li>
+            <li>Jalebi</li>
+            <li>Dahi Bhalla</li>
+        </ul>
+    </div>
+    <div>
+        <h3>South Indian</h3>
+        <ul>
+            <li>idli</li>
+            <li>Masala Dosa</li>
+            <li>Pongal</li>
+            <li>Bisi Bele bath</li>
+        </ul>
+    </div>
+        <div>
+            <h3>Mughlai</h3>
+            <ul>
+                <li>Chicken Biryani</li>
+                <li>Butter Chicken</li>
+                <li>Rogan Josh</li>
+            </ul>
+        </div>
+    </aside>           
+</aside>
+<style>
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        background-color: rgb(77, 255, 0);
+        text-align: center;
+        justify-content: center;
+    }
+
+    .box {
+        background-color: rgb(254, 114, 0);
+        width: 100px;
+        height: 80px;
+        line-height: 100px;
+        border: 2px solid red;
+    }
+</style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">Bengali</div>
+        <div class="box">Gujarati</div>
+        <div class="box">Mughlai</div>
+        <div class="box">South indian</div>
+    </div>
+</body>
+
+</html>
+
+    <section class="bengali">
+        <h2 id="BengaliFood">Bengali Food</h2>
+        <figure>
+            <img src="https://www.awesomecuisine.com/wp-content/uploads/2024/02/Bengali-Cuisine.jpg" width="300" height="200">
+            <figcaption>Bengali cuisine is recognized for its fabulous use of panchphoron... blending sweet and spicy
+                flavors.</figcaption>
+        </figure>
+    </section>
+
+    <section class="gujarati">
+        <h2 id="GujaratiFood">Gujarati Food</h2>
+        <figure>
+            <img src="https://images.squarespace-cdn.com/content/v1/5c6df920d74562c46b234f9e/1587328696559-W520QMT84BQ7F0GIVO91/thaalsite.jpg" width="300" height="200">
+            <figcaption>Gujarati food is primarily vegetarian and highly nutritious... each dish has a unique cooking
+                style.</figcaption>
+        </figure>
+    </section>
+
+    <section class="mughlai">
+        <h2 id="MughlaiFood">Mughlai Food</h2>
+        <figure>
+            <img src="https://static.toiimg.com/thumb/msid-82428481,width-748,height-499,resizemode=4,imgsize-1061969/Most-loved-Mughlai-dishes-one-must-try-in-India.jpg" width="300" height="200">
+            <figcaption>Mughlai cuisine originates from the Mughal Empire... prepared in royal kitchens.</figcaption>
+        </figure>
+    </section>
+
+    <section class="punjabi">
+        <h2 id="PunjabiFood">Punjabi Food</h2>
+        <figure>
+            <img src="https://www.nehascookbook.com/wp-content/uploads/2022/09/Punjabi-thali-WS.jpg
+" width="300" height="200">
+            <figcaption>Punjabi cuisine includes a wide range of vegetarian and non-vegetarian dishes... enjoyed by all
+                communities.</figcaption>
+        </figure>
+    </section>
+
+    <section class="southindian">
+        <h2 id="SouthIndianFood">South Indian Food</h2>
+        <figure>
+            <img src="https://sukhis.com/app/uploads/2022/04/image3-4.jpg" width="300" height="200">
+            <figcaption>South Indian cuisine is known for its light, rice-based dishes... dosas, vadas, idlis and
+                uttapams.</figcaption>
+        </figure>
+    </section>
+
+    <footer>
+        Published by: Harsh Ernala | Date: 13/03/2026
+    </footer>
+</body>
+
+</html>
