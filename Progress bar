@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+     <title>Bootstrap Example</title>
+     <meta charset="utf-8"
+     <meta name="viewport" content="width-device, initial-scale=1">
+
+       <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+    </script>
+    </head>
+    <body>
+
+        <div class="container"
+        <h2>Basic Progress bar</h2>
+        <p>To create a default Progress bar, add a .Progress class to a container element and add a the Progress bar class to its child element. use the css witdth propety  to set the witdth of the bar</p>
+        <div class="Progress"
+        <div class="Progress-bar" style="width:70;">70%</div>
+    </div>
+</div>
+
+    </body>
+    </html>
