@@ -1,0 +1,18 @@
+<!DOCTYPE Html>
+<html>
+    <head>
+        <title>Basic Javascript</title>
+    </head>
+    <body>
+        <h2>Welcome to the world of Javascript</h2>
+        <script>
+            let name ="Harsh"
+            let favouritesubject ="Math";
+            let grade = "6"
+            console.log(`My name is ${name}. i study in grade $(grade). my favourite subject is $(favoriteSubject).`);
+
+            // let student = {name:'Harsh', grade: 5, favoritesubject:'Math'}:
+            //  console.log(`My name is ${student.name}. i study in grade $(student.grade). my favourite subject is $(student.favoriteSubject).`);
+            </script>
+    </body>
+</html>
