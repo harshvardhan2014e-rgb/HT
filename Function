@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fnction</title>
+    </head>
+    <body>
+        <script>
+            let oddOreven = function (number) {
+                if (Number % 2 == 0) {
+                    document.write(number + is an even number);
+                } else {
+                    document.write(number + is an odd number);
+                }
+            }
+            let number = prompt("Enter the number:");
+            oddOreven (number)
+                </script>
+    </body>
+</html>

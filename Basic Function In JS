@@ -4,7 +4,7 @@
         <title>Welome To the world of Javascript</title>
     </head>
     <body>
-        <h2>>Welome To the world of Javascript</h2>
+        <h2>Welome To the world of Javascript</h2>
         <script>
             function sumofTwoNumbers () {
                 let x, y , z;
