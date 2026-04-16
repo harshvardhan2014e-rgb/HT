@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Lovers Hub</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f4f1ea; color: #333; }
+    header { background: #6f4e37; color: white; padding: 1em; text-align: center; }
+    nav a { margin: 0 15px; color: white; text-decoration: none; font-weight: bold; }
+    section { padding: 2em; max-width: 800px; margin: auto; }
+    h2 { color: #6f4e37; }
+    footer { background: #6f4e37; color: white; text-align: center; padding: 1em; margin-top: 2em; }
+    .card { background: white; padding: 1em; margin: 1em 0; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>☕ Coffee Lovers Hub</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#brews">Brews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Welcome to Coffee Lovers Hub — your cozy corner on the web for everything coffee. 
+       From brewing tips to bean recommendations, we’re here to fuel your passion.</p>
+  </section>
+
+  <section id="brews">
+    <h2>Popular Brews</h2>
+    <div class="card">
+      <h3>Espresso</h3>
+      <p>Strong, bold, and the base for many coffee drinks.</p>
+    </div>
+    <div class="card">
+      <h3>Latte</h3>
+      <p>Smooth espresso mixed with steamed milk and a touch of foam.</p>
+    </div>
+    <div class="card">
+      <h3>Cold Brew</h3>
+      <p>Brewed slowly in cold water for a refreshing, less acidic taste.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: hello@coffeelovershub.com</p>
+    <p>Instagram: @coffeelovershub</p>
+  </section>
+
+  <footer>
+    <p>© 2026 Coffee Lovers Hub | Made with love & caffeine</p>
+  </footer>
+</body>
+</html>
