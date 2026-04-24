@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Solar System</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0c10;
+      color: #fff;
+      text-align: center;
+    }
+    h1 {
+      color: #f9d71c;
+    }
+    #planets {
+      margin-top: 20px;
+    }
+    .planet {
+      margin: 5px;
+      padding: 10px;
+      background: #1f2833;
+      border-radius: 8px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <h1>Our Solar System</h1>
+  <p>Welcome! This page introduces the planets orbiting our Sun.</p>
+
+  <div id="planets"></div>
+
+  <button onclick="addPlanet()">Add a Planet</button>
+  <button onclick="changeHeader()">Change Header</button>
+
+  <script>
+    // Array of planets
+    const planetList = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"];
+    let index = 0;
+
+    function addPlanet() {
+      if (index < planetList.length) {
+        const div = document.createElement("div");
+        div.className = "planet";
+        div.textContent = planetList[index];
+        document.getElementById("planets").appendChild(div);
+        index++;
+      } else {
+        alert("All planets added!");
+      }
+    }
+
+    function changeHeader() {
+      document.querySelector("h1").textContent = "Exploring the Solar System!";
+    }
+  </script>
+</body>
+</html>
