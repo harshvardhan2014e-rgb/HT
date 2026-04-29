@@ -48,10 +48,10 @@
        }
 
        div.onmouseenter = function () {
-        div.style.background = "red";
+        div.style.background = "blue";
        }
 
-        div.onmousleave = function () {
+        div.onmouseleave = function () {
                 div.style.background = "transparent";
             };
             </script>
