@@ -1,0 +1,56 @@
+/* style.css - Simple Portfolio Styles */
+.hero {
+    min-height: 60vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('https://framerusercontent.com/images/Ot9q0QjR45DcdJ6NS3zy0KUn3I.jpg') center/cover;
+}
+
+.pfp {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+}
+
+/* Card hover effect */
+.card:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+    background-color: #ffeaa7;
+    /* soft yellow */
+}
+
+.hide {
+    display: none;
+}
+
+.hero,
+section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+section .container {
+    width: 100%;
+}
+
+.hero .container,
+section .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#skills .card,
+#projects .card,
+#projects button,
+#achievements .card {
+    min-height: 250px;
+    padding: 20px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center
+    }
