@@ -3,6 +3,45 @@
     <head>
         <title>Website</title>
         <link rel="stylesheet" href="style.css">
+        <style>
+            .pimg1, .pimg2, .ping3 {
+                position: relative;
+                opacity: 0.70;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+
+            .pimg1 {
+                background-image: url('img1.jpeg');
+                min-height: 100%;
+            }
+
+            .pimg2 {
+                background-image: url('img2.jpeg');
+                min-height: 100%;
+            }
+
+            .pimg3 {
+                background-image: url('img3.jpeg');
+                min-height: 100%;
+            }
+            .section {
+                text-align: center;
+                padding: 50px 80px;
+            }
+
+            .section-light {
+                background-color: #f4f4f4;
+                color: #666;
+            }
+
+            .section-dark {
+                background-color: #282e34;
+                color: #ddd;
+            }
+</style>
         <span class="border trans" style="font-size: 40px;">
          <center>Welcome all to this website</center>
         </span><br>
