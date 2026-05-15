@@ -1,0 +1,135 @@
+<!DOCTYPE hmtl>
+<html>
+    <head>
+        <title>Website</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            body, html{
+  height:100%;
+  margin:0;
+  font-size:16px;
+  font-family:"Lato", sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+  background-color: #b6f8ef;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  display: inline;
+  color: #1affa3;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #111;
+}
+
+.pimg1, .pimg2, .pimg3 {
+  position:relative;
+  opacity: 0.70;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+
+.pimg1 {
+  background-image:url('image1.jpg');
+  min-height:100%;
+}
+
+.pimg2 {
+  background-image:url('image2.jpg');
+  min-height:400px;
+}
+
+.pimg3 {
+  background-image:url('image3.jpg');
+  min-height:400px;
+}
+
+.section {
+  text-align:center;
+  padding:50px 80px;
+}
+
+.section-light{
+  background-color:#f4f4f4;
+  color:#666;
+}
+
+.section-dark{
+  background-color:#282e34;
+  color:#ddd;
+}
+
+.ptext {
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.ptext .border {
+  background-color:#111;
+  color:#fff;
+  padding:20px;
+}
+
+.ptext .border.trans {
+  background-color:transparent;
+}
+
+@media(max-width:568px){
+  .pimg1, .pimg2, .pimg3 {
+    background-attachment:scroll;
+  }
+}
+
+        </style>
+    </head>
+    <body>
+        <div class="topnav">
+            <a class="active" href="#home">Home</a>
+            <a href="#about">About-Me</a>
+            <a href="#contact">Gallery</a>
+            <a href="#contact">Contact-us</a>
+        </div><br>
+
+        <span class="border trans" style="font-size: 40px;">
+          <center>Welcome all to this website</center>
+        </span><br>
+
+        <span class="section section-dark">
+            <h2>Indian Cuisine</h2>
+            <p>Indian cuisine reflects an 8,000-year history of various groups and cultures interacting with the Indian subcontinent,After 9000 BCE, a first period of indirect contacts between Fertile Crescent and Indus Valley civilisations seems to
+            have occurred as a consequence of the Neolithic Revolution and the diffusion of agriculture. Wheat and barley were first
+            grown around 7000 BCE, when agriculture spread from the Fertile Crescent to the Indus Valley. Sesame and humped cattle
+            were domesticated in the local farming communities. Mehrgarh is one of the earliest sites with evidence of farming and
+            herding in South Asia. By 3000 BCE, turmeric, cardamom, black pepper and mustard were harvested in India.</p>
+            </section>
+
+            <div class="pimg3">
+                <div class="ptext">
+                    <span class="border trans">Image Two Text</span>
+                </div>
+            </div>
+
+            <section class="section section-dark">
+                <span>All @copy rights reserved by Harsh Eranla</span>
+            </section>
+        </body>
+</html>
+
