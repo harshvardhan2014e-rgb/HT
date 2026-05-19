@@ -3,8 +3,7 @@
     <head>
         <title>Website</title>
         <link rel="stylesheet" href="style.css">
-        <style>
-            body, html{
+        <style>body, html{
   height:100%;
   margin:0;
   font-size:16px;
@@ -97,8 +96,7 @@
     background-attachment:scroll;
   }
 }
-
-        </style>
+</style>
     </head>
     <body>
         <div class="topnav">
