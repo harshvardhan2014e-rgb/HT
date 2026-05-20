@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Website</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body, html{
+  height:100%;
+  margin:0;
+  font-size:16px;
+  font-family:"Lato", sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+  background-color: #b6f8ef;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  display: inline;
+  color: #1affa3;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #111;
+}
+
+.pimg1, .pimg2, .pimg3 {
+  position:relative;
+  opacity: 0.70;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+
+.pimg1 {
+  background-image:url('pic.webp');
+  min-height:100%;
+}
+
+.pimg2 {
+  background-image:url('pic1.jpg');
+  min-height:400px;
+}
+
+.pimg3 {
+  background-image:url('pic2.jpg');
+  min-height:400px;
+}
+
+.section {
+  text-align:center;
+  padding:50px 80px;
+}
+
+.section-light{
+  background-color:#f4f4f4;
+  color:#666;
+}
+
+.section-dark{
+  background-color:#282e34;
+  color:#ddd;
+}
+
+.ptext {
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.ptext .border {
+  background-color:#111;
+  color:#fff;
+  padding:20px;
+}
+
+.ptext .border.trans {
+  background-color:transparent;
+}
+
+@media(max-width:568px){
+  .pimg1, .pimg2, .pimg3 {
+    background-attachment:scroll;
+  }
+}
+
+#about {
+    background-color: beige;
+    color: #027a5e; 
+    padding: 50px 80px; 
+    text-align: center;
+}
+#gallery {
+    background-color: grey;
+    color: teal; 
+    padding: 50px 80px; 
+    text-align: center;
+}
+
+
+    </style>
+  </head>
+  <body>
+    <div class="topnav">
+      <a class="active" href="#home">Home</a>
+      <a href="#about">About-Me</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact-2">Contact-Us</a>
+    </div><br>
+
+    <span class="border trans" style="font-size:40px;">
+      <center>Welcome all to this website</center>
+    </span><br>
+    
+    <section class="section section-dark">
+      <h2>Section One</h2>
+      <p>
+        Web development is the work involved in developing a Web site for the Internet (World Wide Web) or an intranet (a private network).
+      </p>
+    </section><br>
+    <div id="#gallery" class="section">
+        <h2>Galley</h2>
+        <p>Coding,Art,Teamwork</p>
+    </div>
+   
+    <div class="pimg3">
+      <div class="ptext">
+        <span class="border trans">Hi Im Harsh!</span>
+      </div>
+    </div><br>
+<div id="about" class="section">
+    <h2>About Me</h2>
+    <p>Im A student who loves coding, art, and fun learning!</p>
+</div><br>
+
+    <section class="section section-dark">
+      <span>All @copy rights reserved by Harsh Ernala</span>
+    </section>
+  </body>
+</html>
