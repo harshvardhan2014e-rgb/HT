@@ -174,35 +174,59 @@ h2 {
 /* Cards */
 .cards {
     display: flex;
-    justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card {
     background: #10244D;
-    /* dark blue card */
-    padding: 30px;
+    padding: 20px;
     border-radius: 12px;
-    width: 220px;
+    width: 1450px;
     text-align: center;
     color: #fff;
-    font-weight: bold;
     border: 1px solid #333;
-    text-decoration: none;
-    /* removes underline */
-    display: inline-block;
-    /* makes it behave like a button */
-    transition: 0.3s;
 }
 
-.card:hover {
-    border: 1px solid #FFD700;
-    /* gold hover */
-    transform: translateY(-10px);
-    box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+.service-btn {
+    display: block;
     color: #FFD700;
-    box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.service-info {
+    display: none;
+    margin-top: 15px;
+    font-size: 1.3em;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+.close-btn {
+    display: inline-block;
+    margin-top: 10px;
+    background: #FFD700;
+    color: #0A1A3C;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Show info only for the clicked card */
+.card:target .service-info {
+    display: block;
+}
+
+.card:target .service-btn {
+    display: none;
+}
+
+.cards:has(.card:target) .card:not(:target) {
+    display: none;
 }
 
 /* Leadership */
@@ -249,4 +273,48 @@ footer {
     text-align: center;
     padding: 20px;
     color: #C0C0C0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+html {
+    scroll-behavior: smooth;
+    /* smooth scrolling */
+    scroll-padding-top: 100px;
+    /* leaves space for fixed navbar */
+}
+
+body {
+    margin: 0;
+    overflow-y: auto;
+    /* normal scrolling */
+}
+
+.leadership {
+    display: none;
+    /* hidden by default */
+    background: #0A1A3C;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Show leadership only when targeted */
+#leadership:target {
+    display: block;
+}
+
+/* Close button styling */
+.close-btn {
+    display: inline-block;
+    margin-top: 20px;
+    background: #FFD700;
+    color: #0A1A3C;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
 }
