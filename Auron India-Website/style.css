@@ -12,55 +12,59 @@ body {
 .navbar {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
-    background: #0A1A3C;
+    background: #0d2250;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 12px 40px;
     z-index: 1000;
     border-bottom: 2px solid #FFD700;
+    box-sizing: border-box;
 }
 
 .nav-logo {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: #FFD700;
-    font-weight: bold;
-    font-size: 1.2em;
+    flex-shrink: 0;
 }
 
 .nav-logo img {
-    width: 135px;
-    /* larger logo */
+    width: 130px;
     height: 100px;
 }
 
 .nav-logo span {
-    font-size: 1.5em;
+    font-size: 1.4em;
+    font-weight: bold;
     color: #FFD700;
 }
-
-
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    flex-shrink: 0;
+}
+
+.nav-links li {
+    flex-shrink: 0;
 }
 
 .nav-links li a {
     text-decoration: none;
     color: #C0C0C0;
     font-weight: bold;
-    
+    white-space: nowrap;
+    transition: color 0.3s;
 }
-
 
 .nav-links li a:hover {
     color: #FFD700;
-    text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
 }
 
 /* Hero with shimmer */
@@ -100,7 +104,7 @@ body {
 
 .contact {
   background: #0F2454; /* deep blue section */
-  padding: 80px 20px;
+  padding: 1px 20px;
 }
 
 .contact h2 {
@@ -177,18 +181,27 @@ h2 {
 
 .card {
     background: #10244D;
+    /* dark blue card */
     padding: 30px;
     border-radius: 12px;
     width: 220px;
-    transition: 0.3s;
+    text-align: center;
     color: #fff;
     font-weight: bold;
     border: 1px solid #333;
+    text-decoration: none;
+    /* removes underline */
+    display: inline-block;
+    /* makes it behave like a button */
+    transition: 0.3s;
 }
 
 .card:hover {
     border: 1px solid #FFD700;
+    /* gold hover */
     transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+    color: #FFD700;
     box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
 }
 
