@@ -1,0 +1,239 @@
+/* Global */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #0A1A3C;
+    /* dark blue background */
+    color: #fff;
+    padding-top: 70px;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #0A1A3C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 40px;
+    z-index: 1000;
+    border-bottom: 2px solid #FFD700;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #FFD700;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.nav-logo img {
+    width: 135px;
+    /* larger logo */
+    height: 100px;
+}
+
+.nav-logo span {
+    font-size: 1.5em;
+    color: #FFD700;
+}
+
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #C0C0C0;
+    font-weight: bold;
+    
+}
+
+
+.nav-links li a:hover {
+    color: #FFD700;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+}
+
+/* Hero with shimmer */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: linear-gradient(135deg, #0A1A3C, #0F2454);
+    background: url("Company.png") center/cover no-repeat;
+    position: relative;
+    color: #1100ff;    
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 200%;
+    height: 100%;
+    animation: shimmer 6s infinite linear;
+}
+
+
+
+.hero h1 {
+    font-size: 3.5em;
+    color: #ffffff;
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+    position: relative;
+}
+
+.hero p {
+    font-size: 1.3em;
+    color: #C0C0C0;
+    position: relative;
+}
+
+.contact {
+  background: #0F2454; /* deep blue section */
+  padding: 80px 20px;
+}
+
+.contact h2 {
+  color: #FFD700; /* gold heading */
+}
+
+form {
+  background: #10244D; /* lighter blue card */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255,215,0,0.4);
+}
+
+form input, form textarea {
+  margin: 10px 0;
+  padding: 12px;
+  border: 1px solid #FFD700;
+  border-radius: 8px;
+  background: #0A1A3C;
+  color: #fff;
+}
+
+form button {
+  background: #FFD700;
+  color: #000;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form button:hover {
+  background: #D4AF37;
+}
+
+.cta {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #FFD700;
+    color: #000;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    position: relative;
+}
+
+.cta:hover {
+    background: #D4AF37;
+    transform: scale(1.1);
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #FFD700;
+    margin-bottom: 20px;
+    font-size: 2.2em;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #10244D;
+    padding: 30px;
+    border-radius: 12px;
+    width: 220px;
+    transition: 0.3s;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid #333;
+}
+
+.card:hover {
+    border: 1px solid #FFD700;
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+}
+
+/* Leadership */
+.leadership img.profile {
+    width: 300px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+form input,
+form textarea {
+    margin: 10px 0;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+}
+
+form button {
+    background: #FFD700;
+    color: #000;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background: #D4AF37;
+}
+
+/* Footer */
+footer {
+    background: #000000;
+    text-align: center;
+    padding: 20px;
+    color: #C0C0C0;
+}
