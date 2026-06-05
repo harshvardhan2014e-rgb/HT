@@ -68,7 +68,7 @@ body {
 }
 
 /* Hero with shimmer */
-.hero {
+.Home {
     text-align: center;
     padding: 120px 20px;
     background: linear-gradient(135deg, #0A1A3C, #0F2454);
@@ -77,7 +77,7 @@ body {
     color: #1100ff;    
 }
 
-.hero::before {
+.Home::before {
     content: "";
     position: absolute;
     top: 0;
@@ -96,7 +96,7 @@ body {
     position: relative;
 }
 
-.hero p {
+.Home p {
     font-size: 1.3em;
     color: #C0C0C0;
     position: relative;
