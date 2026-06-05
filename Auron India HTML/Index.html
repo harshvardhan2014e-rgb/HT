@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    /* Global */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #0A1A3C;
+    /* dark blue background */
+    color: #fff;
+    padding-top: 70px;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #0d2250;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 40px;
+    z-index: 1000;
+    border-bottom: 2px solid #FFD700;
+    box-sizing: border-box;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.nav-logo img {
+    width: 130px;
+    height: 100px;
+}
+
+.nav-logo span {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #FFD700;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    flex-shrink: 0;
+}
+
+.nav-links li {
+    flex-shrink: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #C0C0C0;
+    font-weight: bold;
+    white-space: nowrap;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #FFD700;
+}
+
+/* Hero with shimmer */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: linear-gradient(135deg, #0A1A3C, #0F2454);
+    background: url("Company.png") center/cover no-repeat;
+    position: relative;
+    color: #1100ff;    
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 200%;
+    height: 100%;
+    animation: shimmer 6s infinite linear;
+}
+
+
+
+.hero h1 {
+    font-size: 3.5em;
+    color: #ffffff;
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+    position: relative;
+}
+
+.hero p {
+    font-size: 1.3em;
+    color: #C0C0C0;
+    position: relative;
+}
+
+.contact {
+  background: #0F2454; /* deep blue section */
+  padding: 1px 20px;
+}
+
+.contact h2 {
+  color: #FFD700; /* gold heading */
+}
+
+form {
+  background: #10244D; /* lighter blue card */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255,215,0,0.4);
+}
+
+form input, form textarea {
+  margin: 10px 0;
+  padding: 12px;
+  border: 1px solid #FFD700;
+  border-radius: 8px;
+  background: #0A1A3C;
+  color: #fff;
+}
+
+form button {
+  background: #FFD700;
+  color: #000;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form button:hover {
+  background: #D4AF37;
+}
+
+.cta {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #FFD700;
+    color: #000;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    position: relative;
+}
+
+.cta:hover {
+    background: #D4AF37;
+    transform: scale(1.1);
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #FFD700;
+    margin-bottom: 20px;
+    font-size: 2.2em;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: #10244D;
+    padding: 20px;
+    border-radius: 12px;
+    width: 1450px;
+    text-align: center;
+    color: white;
+    border: 1px solid #333;
+}
+
+.service-btn {
+    display: block;
+    color: #FFD700;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.service-info {
+    display: none;
+    margin-top: 15px;
+    font-size: 1.3em;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+.close-btn {
+    display: inline-block;
+    margin-top: 10px;
+    background: #FFD700;
+    color: #0A1A3C;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Show info only for the clicked card */
+.card:target .service-info {
+    display: block;
+}
+
+.card:target .service-btn {
+    display: none;
+}
+
+.cards:has(.card:target) .card:not(:target) {
+    display: none;
+}
+
+/* Leadership */
+.leadership img.profile {
+    width: 300px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+form input,
+form textarea {
+    margin: 10px 0;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+}
+
+form button {
+    background: #FFD700;
+    color: #000;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background: #D4AF37;
+}
+
+/* Footer */
+footer {
+    background: #000000;
+    text-align: center;
+    padding: 20px;
+    color: #C0C0C0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+html {
+    scroll-behavior: smooth;
+    /* smooth scrolling */
+    scroll-padding-top: 100px;
+    /* leaves space for fixed navbar */
+}
+
+body {
+    margin: 0;
+    overflow-y: auto;
+    /* normal scrolling */
+}
+
+.leadership {
+    display: none;
+    /* hidden by default */
+    background: #0A1A3C;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Show leadership only when targeted */
+#leadership:target {
+    display: block;
+}
+
+/* Close button styling */
+.close-btn {
+    display: inline-block;
+    margin-top: 20px;
+    background: #FFD700;
+    color: #0A1A3C;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auron India - Capital With Vision</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="Auron--Logo.png" alt="Auron India Logo">
+            <span>Auron India</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#leadership">Leadership</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero">
+        <h1>Capital With Vision</h1>
+        <p>Strategy. Trust. Growth.</p>
+        <a href="#services" class="cta">Explore Services</a>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>At <strong>Auron India</strong>, we are more than just a financial services firm we are a trusted partner in
+            building lasting value. With expertise spanning investment banking, asset management, private
+            equity, and wealth advisory, we combine deep industry knowledge with a forward looking vision.
+            Our mission is to empower clients with strategies that balance innovation and stability,
+            ensuring sustainable growth in an ever changing market. Guided by principles of trust,
+            transparency, and excellence, we work closely with businesses, investors, and families to
+            unlock opportunities and achieve long term success. Every solution we deliver is rooted in
+            our commitment to integrity and our passion for driving progress, making <strong>Auron India</strong> name
+        </p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="cards">
+
+            <div class="card" id="investment">
+                <a href="#investment" class="service-btn">Investment Banking</a>
+                <div class="service-info">
+                    <p>At Auron India Investment banking is a specialized division of financial institutions that
+                        connects investors with entities seeking
+                        capital, such as corporations or governments . Unlike commercial banks, investment banks do not
+                        take deposits;
+                        instead, they focus on advisory services, underwriting, and capital market activities . They
+                        play a critical role in
+                        the financial system by allocating capital to economically productive uses and facilitating
+                        large, complex transactions
+                    </p>
+                    <a href="#services" class="close-btn">Close</a>
+                </div>
+            </div>
+
+            <div class="card" id="asset">
+                <a href="#asset" class="service-btn">Asset Management</a>
+                <div class="service-info">
+                    <p>Asset management involves the strategic oversight of both financial and physical assets to
+                        enhance value over time while
+                        minimizing risks and costs. In finance, it focuses on managing investments such as stocks,
+                        bonds, mutual funds, and ETFs
+                        on behalf of individuals, corporations, or institutions. In business and infrastructure, it
+                        extends to physical assets
+                        like machinery, buildings, roads, and IT systems, ensuring they are efficiently utilized,
+                        maintained, and disposed of
+                        when necessary.</p>
+                    <a href="#services" class="close-btn">Close</a>
+                </div>
+            </div>
+
+            <div class="card" id="private">
+                <a href="#private" class="service-btn">Private Equity</a>
+                <div class="service-info">
+                    <p>Private equity refers to equity investments in companies that are not publicly traded on stock
+                        exchanges, often made by
+                        specialized investment funds or limited partnerships rather than the general public. PE firms
+                        raise capital
+                        from institutional investors such as pension funds, hedge funds, endowments, and high-net-worth
+                        individuals, pooling it
+                        into a fund managed by general partners , while the investors act as limited partners.</p>
+                    <a href="#services" class="close-btn">Close</a>
+                </div>
+            </div>
+
+            <div class="card" id="wealth">
+                <a href="#wealth" class="service-btn">Wealth Advisory</a>
+                <div class="service-info">
+                    <p>A wealth advisor, also known as a wealth management advisor, is a type of financial advisor who
+                        primarily works with
+                        individuals or families with significant assets, often at least $1 million in liquid assets,
+                        though services are not
+                        strictly limited to high-net-worth clients. Their main goal is to help clients manage and grow
+                        their financial resources
+                        while aligning strategies with long-term goals and risk tolerance.</p>
+                    <a href="#services" class="close-btn">Close</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <!-- Leadership Section -->
+    <section id="leadership" class="leadership">
+        <h2>Leadership</h2>
+        <img src="AURON-CARD.png" alt="Business Card" class="profile">
+        <p><strong>CH. SREDEVI</strong> – Director</p>
+        <p>Email: Sreedevi.ch@auronindia.com | Phone: +91 93466 8439</p>
+        <p>Corporate Office: RMK Chola Gardens E-Block E123 Thiruverkadu 600077</p>
+        <a href="#hero" class="close-btn">Close</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form action="https://formspree.io/f/mojbdonq" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="_replyto" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Auron India | Registered by SEBI</p>
+    </footer>
+</body>
+
+</html>
