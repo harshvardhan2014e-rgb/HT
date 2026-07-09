@@ -42,24 +42,22 @@ def initialize_phone_book():
         print(phone_book)
         return phone_book
     
-print("*********************************************************************")
 
-print("Welcome to the Phone Book Application")
+def menu():
+    print("*********************************************************************")
+    print("Welcome to the Phone Book Application")
+    print("*********************************************************************")
+    print("You Can now perform the following operations on your Phone Book!")
+    print("1. Add a new contact")
+    print("2. Remove Existing contact")
+    print("3. Delete all contacts")
+    print("4. Search for a contact")
+    print("5. Display all contacts")
+    print("6. Exit the application")
 
-print("*********************************************************************")
+    choice = int(input("Please enter your choice: "))
+    return choice  
 
-print ("You Can now perform the following operations on your Phone Book!")
-
-print("1. Add a new contact")
-print("2. Remove Existing contact")
-print("3. Delete all contacts")
-print("4. Search for a contact")
-print("5. Display all contacts")
-print("6. Exit the application")
-
-choice = input("Please enter your choice (1-6): ")
-
-return choice
 
 def add_contact(phone_book):
     dip = []
@@ -115,23 +113,23 @@ def remove_contact(phone_book):
                 print("Contact found: ", phone_book[i])
                 return phone_book
             
-            elif choice==3
+            elif choice==3:
 
-            for i in range(len(phone_book)):
-                if query == phone_book[i][3]:
+             for i in range(len(phone_book)):
+              if query == phone_book[i][3]:
                   check = i
                   temp.append(phone_book[i])
 
             elif choice==4:
-            query = input("Please enter the category of the contact you want to search for: ")
-            for i in range(len(phone_book)):
-                if query == phone_book[i][4]:
-                    print("Contact found: ", phone_book[i])
-                    return phone_book
+             query = input("Please enter the category of the contact you want to search for: ")
+        for i in range(len(phone_book)):
+               if query == phone_book[i][4]:
+                  print("Contact found: ", phone_book[i])
+                  return phone_book
 
-            elif choice==5:
-            query = input("Please enter the phone number of the contact you want to search for: ")
-            for i in range(len(phone_book)):
+               elif choice==5:
+                query = input("Please enter the phone number of the contact you want to search for: ")
+        for i in range(len(phone_book)):
                 if query == phone_book[i][1]:
                     print("Contact found: ", phone_book[i])
                     return phone_book
@@ -146,6 +144,48 @@ def remove_contact(phone_book):
                 else:
                     display_all(temp)
                     return check
+                
+                def display_all(phone_book):
+                    if not phone_book:
+                        print("No contacts found.")
+                    else:
+                        for i in range(len(phone_book)):
+                            print(phone_book[i])
+
+def thanks ():
+        
+    print("*********************************************************************")
+    print("Thank you for using the Phone Book Application. Have a great day!")
+    print("Please come back again!")
+
+print("*********************************************************************")
+print("...........................................................................................")
+print
+("Hello user, Welcome to the Phone Book Application.!")
+print
+("...........................................................................................")
+
+ch = 1
+phone_book = initialize_phone_book()
+while ch in (1, 2, 3, 4, 5):
+    ch = menu()
+    if ch == 1:
+        phone_book = add_contact(phone_book)
+    elif ch == 2:
+        phone_book = remove_contact(phone_book)
+    elif ch == 3:
+        phone_book = delete_all_contacts(phone_book)
+    elif ch == 4:
+        d = search_contact(phone_book)
+        if d == -1:
+            print("Contact not found.")
+    elif ch == 5:
+        display_all(phone_book)
+    else:
+        thanks()
+
+
+
                 
 
 
