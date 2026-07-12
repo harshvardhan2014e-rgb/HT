@@ -1,40 +1,47 @@
-
+import sys
 print("*******************************************")
 print("Welcome to My SlamBook!")
 print("*******************************************")
 
-
+contacts = {}
 print("*******************************************")
 print("SLAMBOOK MENU")
 print("*******************************************")
 
-def menu():
+while True:  
+ def menu():
     print("1. Add a New Contact")
     print("2. View Contacts")
-    print("3. Edit Contact")
-    print("4. Delete Contact")
-    print("5. Exit")
-menu()
+    print("3. Delete Contact")
+    print("4. Exit")
+ menu()
 
-choice = input("Enter your choice (1-5): ")
-contacts = []
+ choice = input("Enter your choice (1-5): ")
+ 
+ if choice == "1":
+    name = input("Enter The Name Of the Person You Want To Add: ")
+    phone = input("Enter The Phone Number: ")
+    contacts[name] = phone
+    print("Contact Added!")
 
+ if choice == "2":
+    if contacts:
+        print("\nContacts:")
+        for name, phone in contacts.items():
+            print("Name:", name)
+            print("Phone:", phone)
+    else:
+        print("No contacts found")
+ 
+ if choice == "3":
+    remove = input("Which Contact Do you want to delete: ")
+    if remove in contacts:
+        del contacts[remove]
+        print("Contact Deleted")
+    else:
+        print("Contact not found")
 
-def menu():
-    print("1. Add a New Contact")
-    print("2. View Contacts")
-    print("3. Edit Contact")
-    print("4. Delete Contact")
-    print("5. Exit")
+ if choice == "4":
 
-
-    menu()
-    choice = input("Enter your choice (1-5): ")
-    contacts = []
-    if choice == 1:
-     name = input(" Enter The Name Of the Person You Want To Add: ")
-     phone= input("Enter The Phone Number: ")
-     contacts[name] = phone
-     print(f"Contact Added!")
-
+   sys.exit()
 
