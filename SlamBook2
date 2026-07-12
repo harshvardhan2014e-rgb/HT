@@ -1,0 +1,40 @@
+
+print("*******************************************")
+print("Welcome to My SlamBook!")
+print("*******************************************")
+
+
+print("*******************************************")
+print("SLAMBOOK MENU")
+print("*******************************************")
+
+def menu():
+    print("1. Add a New Contact")
+    print("2. View Contacts")
+    print("3. Edit Contact")
+    print("4. Delete Contact")
+    print("5. Exit")
+menu()
+
+choice = input("Enter your choice (1-5): ")
+contacts = []
+
+
+def menu():
+    print("1. Add a New Contact")
+    print("2. View Contacts")
+    print("3. Edit Contact")
+    print("4. Delete Contact")
+    print("5. Exit")
+
+
+    menu()
+    choice = input("Enter your choice (1-5): ")
+    contacts = []
+    if choice == 1:
+     name = input(" Enter The Name Of the Person You Want To Add: ")
+     phone= input("Enter The Phone Number: ")
+     contacts[name] = phone
+     print(f"Contact Added!")
+
+
