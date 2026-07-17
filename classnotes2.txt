@@ -1,0 +1,15 @@
+TODO Variables: Containers storing data values.
+IMPORTANT Data Types: Integers, strings, booleans.Strings: text wrapped in quotes.Booleans: True or false values.
+Arrays: Ordered lists of data.
+IMPORTANT Functions: Reusable blocks of code.
+Arguments: Inputs passed into functions.
+TODO Return: Output sent from functions.
+TODO If Statements: Conditional code execution.
+SKIP Else Clause: Runs if condition fails.For 
+Loops: Repeat code set times.
+SKIP While Loops: Run while condition holds.
+Operators: Math and logic symbols.
+SKIP Objects: key-value pair COllections.
+Classes: Blueprints for creating objects.
+Comments: Notes ignored by compilers.
+TODO Debugging: Finding and fixing errors.

@@ -1,0 +1,2 @@
+IMPORTANT Data Types: Integers, strings, booleans.Strings: text wrapped in quotes.Booleans: True or false values.
+IMPORTANT Functions: Reusable blocks of code.
