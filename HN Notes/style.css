@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #F5F7FA;
+    color: #1F2937;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+}
+
+section,
+main {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    font-size: 16px;
+    box-sizing: border-box;
+
+    /* Shadow */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+    /* Smooth animation */
+    transition: 0.3s ease;
+}
+
+input:hover,
+textarea:hover {
+    border-color: #10B981;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 12px;
+    background: #10B981;
+    color: white;
+    cursor: pointer;
+
+    /* Shadow */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+
+    /* Smooth animation */
+    transition: 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+article {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+}
+
+article:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+article h2 {
+    margin-top: 0;
+    font-size: 22px;
+    color: #1F2937;
+}
+
+article p {
+    font-size: 16px;
+    color: #4B5563;
+}
+
+footer {
+    text-align: center;
+    color: #6B7280;
+    margin: 40px 0 20px;
+    font-size: 14px;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #6B7280;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+article {
+    cursor: pointer;
+}
+
+article button {
+    margin-right: 10px;
+}
